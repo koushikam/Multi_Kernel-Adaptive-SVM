@@ -73,7 +73,7 @@ def templated_fig():
 
 # DataFrame Plot
 
-def Plotly_plot(fig=None,df=None,subplot_titles=None,title=None,file='Test',ylab=None,xlab = 'Time',show_link=True,textfontsize=15,space_v=0.03,legend=True,tickformat= None,nticks_x=17,mode='lines',annot_font=16):
+def df_plot(fig=None,df=None,subplot_titles=None,title=None,file='Test',ylab=None,xlab = 'Time',show_link=True,textfontsize=15,space_v=0.03,legend=True,tickformat= None,nticks_x=17,mode='lines',annot_font=16):
     colors = iter(px.colors.qualitative.Dark24 + px.colors.qualitative.Alphabet)
     marker_symbol = iter(['x','circle','star','square','diamond','x','circle','star','square','diamond'])
     if subplot_titles is None:
@@ -177,9 +177,7 @@ class visualize():
         y_min, y_max = X[:, 4].min() - 1, X[:, 4].max() + 1                                  #<------------- Change Features
         xx, yy = np.meshgrid(np.arange(x_min, x_max, h),
                                  np.arange(y_min, y_max, h))
-
-
-            # title for the plots
+        # title for the plots
 
         titles = 'MK-SVM Decision Boundary - RBF Kernels'
 
