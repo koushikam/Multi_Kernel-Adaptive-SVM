@@ -11,7 +11,7 @@ import numpy as np
 import numexpr as ne
 import math
 import cvxopt
-from cvxopt import matrix, spmatrix
+from cvxopt import matrix, spmatrix # need version 1.2.6
 cvxopt.solvers.options['show_progress'] = False # True #
 import pandas as pd
 
