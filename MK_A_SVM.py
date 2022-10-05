@@ -706,4 +706,3 @@ if __name__ == "__main__":
     # fig.write_image(f'../SVM_Bound.png',height=500, width=1550,engine='orca')
     # fig.show()
 
-# In[]
