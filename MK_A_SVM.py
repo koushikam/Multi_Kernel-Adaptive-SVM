@@ -293,7 +293,6 @@ class MK_SVM(object):
     def tune_params(self,X,y):
         '''
         
-
         Parameters
         ----------
         X : float
